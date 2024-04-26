@@ -28,8 +28,8 @@ public partial class Resumen : ContentPage
     }
 
 
-    private void btnCsesion_Clicked(object sender, EventArgs e)
+    private async void btnCsesion_Clicked(object sender, EventArgs e)
     {
-
+        await Navigation.PopToRootAsync();
     }
 }
