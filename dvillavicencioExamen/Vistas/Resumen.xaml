@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dvillavicencioExamen.Vistas.Resumen"
+>
+
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="20"
+Padding="25">
+
+        <Label Text="REGISTRO" 
+       TextColor="BLUE"
+       FontSize="22"
+       VerticalTextAlignment="Center"
+       HorizontalTextAlignment="Center"/>
+
+        <Label x:Name="lblUsuario"
+       HorizontalTextAlignment="End"
+       FontSize="14"/>
+
+        <Image x:Name="imagen"
+           Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"
+           HeightRequest="50"
+           />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre"
+        FontSize="15"
+        TextColor="blue"
+        Grid.Row="0"
+        Grid.Column="0" 
+        VerticalTextAlignment="Center"
+        HorizontalTextAlignment="Center"
+           />
+            <Entry x:Name="txtNombre" 
+                    Placeholder= "Ingrese Nombre"
+                    IsEnabled="false"
+                    MaxLength="13"
+                    Grid.Row="0"
+                    Grid.Column="1"
+         />
+            <Label Text="Apellido"
+        FontSize="15"
+        TextColor="blue"
+        Grid.Row="1"
+        Grid.Column="0" 
+        VerticalTextAlignment="Center"
+        HorizontalTextAlignment="Center"
+           />
+            <Entry x:Name="txtApellido" 
+        Placeholder= "Ingrese Apellido"
+                   IsEnabled="false"
+        MaxLength="13"
+        Grid.Row="1"
+        Grid.Column="1"
+         />
+
+            <Label Text="Edad"
+        FontSize="15"
+        TextColor="blue"
+        Grid.Row="2"
+        Grid.Column="0" 
+        VerticalTextAlignment="Center"
+        HorizontalTextAlignment="Center"
+           />
+            <Entry x:Name="txtEdad" 
+                    Placeholder= "Ingrese Edad"
+                   IsEnabled="false"
+                    MaxLength="13"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                     />
+            <Label Text="Fecha"
+                    FontSize="15"
+                    TextColor="blue"
+                    Grid.Row="3"
+                    Grid.Column="0" 
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                       />
+            <Entry x:Name="txtFecha" 
+                    Placeholder= "Ingrese Nombre"
+                   IsEnabled="false"
+                    MaxLength="13"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                     />
+            <Label Text="Ciudad"
+                    FontSize="15"
+                    TextColor="blue"
+                    Grid.Row="4"
+                    Grid.Column="0" 
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                       />
+            <Entry x:Name="txtCiudad" 
+                    Placeholder= "Ingrese Apellido"
+                   IsEnabled="false"
+                    MaxLength="13"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                     />
+
+            <Label Text="Pais"
+                    FontSize="15"
+                    TextColor="blue"
+                    Grid.Row="5"
+                    Grid.Column="0" 
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                       />
+            <Entry x:Name="txtPais" 
+                    Placeholder= "Ingrese Edad"
+                   IsEnabled="false"
+                    MaxLength="13"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                     />
+
+            <Label Text="Minicial"
+                    FontSize="15"
+                    TextColor="blue"
+                    Grid.Row="6"
+                    Grid.Column="0" 
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+           />
+            <Entry x:Name="txtMinicial" 
+                    Placeholder= "Ingrese Nombre"
+                   IsEnabled="false"
+                    MaxLength="13"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                     />
+            <Label Text="Pmensual"
+                    FontSize="15"
+                    TextColor="blue"
+                    Grid.Row="7"
+                    Grid.Column="0" 
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+           />
+            <Entry x:Name="txtPmensual" 
+                    Placeholder= "Ingrese Apellido"
+                   IsEnabled="false"
+                    MaxLength="13"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                     />
+
+            <Label Text="Ptotal"
+                    FontSize="15"
+                    TextColor="blue"
+                    Grid.Row="8"
+                    Grid.Column="0" 
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                       />
+            <Entry x:Name="txtPtotal" 
+                    Placeholder= "Ingrese Edad"
+                   IsEnabled="false"
+                    MaxLength="13"
+                    Grid.Row="8"
+                    Grid.Column="1"
+                     />
+            
+        </Grid>
+            <Button x:Name="btnCsesion"
+        Text="VCERRAR SESION"
+        Clicked="btnCsesion_Clicked"
+ 
+         />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

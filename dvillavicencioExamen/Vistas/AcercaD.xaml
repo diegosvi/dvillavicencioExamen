@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dvillavicencioExamen.Vistas.AcercaD"
+             >
+    <VerticalStackLayout
+        Spacing="40"
+        Padding="25">
+
+        <Label Text="ACERCA DEL SISTEMA" 
+       TextColor="red"
+       FontSize="20"
+       VerticalTextAlignment="Center"
+       HorizontalTextAlignment="Center"/>
+
+        <Image x:Name="imagen"
+       Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"
+       HeightRequest="50"
+       />
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Estudiante: Diego Villavicencio"
+                   FontSize="20"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   Grid.Column="1" />
+            <Label Text="Curso: Septimo A"
+                   FontSize="20"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Grid.Row="2"
+                   Grid.Column="1"/>
+            <Label Text="Carrera: Informatica Online"
+                   FontSize="20"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Grid.Row="4"
+                   Grid.Column="1"/>
+
+            <Label Text="2024"
+                   FontSize="20"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Grid.Row="6"
+                   Grid.Column="1"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
